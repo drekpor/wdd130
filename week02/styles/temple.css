@@ -1,0 +1,92 @@
+/* ======= General Body ======= */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======= Header (dark grey like footer) ======= */
+header {
+  background-color: #333; /* dark grey */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* ======= Main Card ======= */
+main {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden; /* removes thin white border around image */
+}
+
+/* ======= Title ======= */
+h1 {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* ======= Image ======= */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* ======= Sections ======= */
+section {
+  background-color: #e0e0e0;
+  padding: 15px 20px;
+  margin: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= Section Headers ======= */
+section h2 {
+  color: #000;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+/* ======= Links ======= */
+a {
+  color: #0b5394;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ======= Footer ======= */
+footer {
+  background-color: #333; /* same as header */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+
+
+
+
+  
+
