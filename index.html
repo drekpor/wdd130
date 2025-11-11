@@ -1,53 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibene Ekpor | WDD 130</title>
-    <!-- Meta Description and Author -->
-    <meta name="description" content="Ibene Ekpor, BYU Pathway student, 
-    Web Development course, aspiring full stack developer home page.">
-    <meta name="author" content="Ibene Ekpor">
-    <!-- External CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibene Ekpor | WDD 130</title>
+  <meta name="description" content="Ibene Ekpor, BYU Pathway student, Web Development course, aspiring full stack developer home page.">
+  <meta name="author" content="Ibene Ekpor">
+
+  <!-- Inline CSS -->
+  <style>
+    /* === Global Styles === */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    /* === Header === */
+    header {
+      background-color: #222;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* === Main Layout === */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* === Intro Section === */
+    .intro {
+      flex: 2;
+      max-width: 600px;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .intro h1 {
+      text-align: center;
+    }
+
+    .intro img {
+      width: 150px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+    }
+
+    /* === Aside Section === */
+    aside {
+      flex: 1;
+      max-width: 350px;
+      background-color: #f0f0f0;
+      color: #333;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    aside img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    /* === Footer === */
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px 0;
+      background-color: #222;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    /* === Responsive Adjustment === */
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      aside,
+      .intro {
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="intro">
-        <h1>Ibene Ekpor | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Ibene Ekpor photo">
-        <p>Hello, my name is Ibene Ekpor. A Nigerian student in BYU Pathway.</p>
-        <p>I am a Physician who is also passionate about technology and I wish to upskill.</p>
-        <p>My aim is to become a certified full stack, back and front end developer.</p>
-        <p>I am enrolled in Web Development with intention to develop my expertise.</p>
-        <p>I enjoy reading, writing, listening to jokes, as well as the company of my cat.</p>
-        <p>Assisting me through this exciting journey would be highly appreciated.</p>
-        </section>
-    </main>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="wwr/">Rafting Website</a>
+    </nav>
+  </header>
 
+  <!-- Main Content -->
+  <main>
+    <!-- Intro Section -->
+    <section class="intro">
+      <h1>Ibene Ekpor | WDD 130</h1>
+      <img src="images/profile.jpg" alt="Ibene Ekpor photo">
+      <p>Hello, my name is Ibene Ekpor. A Nigerian student in BYU Pathway.</p>
+      <p>I am a Physician who is also passionate about technology and I wish to upskill.</p>
+      <p>My aim is to become a certified full stack, back and front end developer.</p>
+      <p>I am enrolled in Web Development with intention to develop my expertise.</p>
+      <p>I enjoy reading, writing, listening to jokes, as well as the company of my cat.</p>
+      <p>Assisting me through this exciting journey would be highly appreciated.</p>
+    </section>
+
+    <!-- Aside Section -->
     <aside>
-        <h2>Cross River State. Calabar</h2>
-        <img src="week02/images/tinapa-calabar.jpg" alt="Scenic view of a Calabar tourist hub">
-        <p>Calabar is the state capital of Cross River State which is located in the 
-           South-South part of Nigeria.she is known for her rich cultural heritage,
-           beautiful landscapes, and vibrant festivals. She is often called the 
-          "Cultural and cuisine Capital of Nigeria".Cross River was one of the hub
-           for slave trade in the West Africa estuaries.She also served as a route
-           for trading in palm oil and local gin with merchants from mainly Europe</p>
+      <h2>Cross River State, Calabar</h2>
+      <img src="images/tinapa-calabar.jpg" alt="Scenic view of a Calabar tourist hub">
+      <p>Calabar is the state capital of Cross River State located in the 
+         South-South part of Nigeria. She is known for her rich cultural heritage,
+         beautiful landscapes, and vibrant festivals. She is often called the 
+         "Cultural and Cuisine Capital of Nigeria." Cross River was once a hub
+         for slave trade in the West African estuaries and served as a route
+         for trading in palm oil and local gin with merchants from Europe.</p>
     </aside>
+  </main>
 
-    <footer>
-        <p>©2025 😻 Ibene Ekpor 😻 Calabar,Cross River, Nigeria</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>©2025 😻 Ibene Ekpor 😻 Calabar, Nigeria</p>
+  </footer>
+
 </body>
 </html>
-
-
-
