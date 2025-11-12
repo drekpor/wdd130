@@ -30,7 +30,7 @@ body {
     margin: 0 1rem;
     font-weight: bold;
     padding: 0.25rem 0.5rem;
-    display: inline-block;
+    display: block;
   }
 
   nav a:hover {
@@ -110,6 +110,7 @@ aside img {
     background-color: #222;
     color: white;
     font-size: 0.9rem;
+    border-top: #333;
   }
   @media (max-width: 768px) {
     main {
