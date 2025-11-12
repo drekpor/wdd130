@@ -35,6 +35,8 @@ body {
 
   nav a:hover {
     text-decoration: underline;
+    background-color: #333;
+    padding: auto;
   }
 
   /* === Main Layout === */
