@@ -1,44 +1,105 @@
-/* General Reset for Paragraphs */
-p {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
     padding: 0;
-}
+    background-color: #fafafa;
+    color: #333;
+  }
 
-/* Main section styling */
-main {
-    max-width: 800px; /* Limit width for readability */
-    margin: 0 auto; /* Center main content */
-}
-
-/* Profile image styling */
-main img {
-    width: 150px;
-    height: auto; /* Maintains aspect ratio */
-    display: block;
+  p {
+    line-height: 1.6;
     margin-bottom: 1rem;
-}
+  }
+
+  /* === Header === */
+  header {
+    background-color: #222;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* === Main Layout === */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  /* === Intro Section === */
+  .intro {
+    flex: 2;
+    max-width: 600px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .intro h1 {
+    text-align: center;
+  }
+
+  .intro img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+  }
+
 
 /* Aside styling */
 aside {
-    width: 300px;
-    margin: 20px auto; /* Center aside */
-    padding: 15px;
-    border: 1px solid #ccc;
+    flex: 1;
+    max-width: 350px;
     background-color: #f0f0f0;
     color: #333;
-}
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+  }
 
 aside img {
-    width: 200px;
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin-bottom: 10px;
-}
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
 
 /* Footer styling */
 footer {
-    margin-top: 30px; /* Separate from main content */
-    border-top: 2px solid #333; /* Top border */
-    text-align: center; /* Center the text */
-    padding: 10px 0;
-    background-color: #eaeaea;
-}
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #222;
+    color: white;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    aside,
+    .intro {
+      max-width: 90%;
+    }
+  }
