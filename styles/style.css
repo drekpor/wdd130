@@ -7,6 +7,7 @@ body {
   }
 
   p {
+    padding: 0;
     line-height: 1.6;
     margin-bottom: 1rem;
   }
@@ -23,10 +24,15 @@ body {
     text-decoration: none;
     margin: 0 1rem;
     font-weight: bold;
+    padding:o;
+    display: none;
+
   }
 
   nav a:hover {
     text-decoration: underline;
+    background-color: #fafafa;
+    padding: 0;
   }
 
   /* === Main Layout === */
@@ -52,6 +58,7 @@ body {
 
   .intro h1 {
     text-align: center;
+    color: #333;
   }
 
   .intro img {
@@ -74,10 +81,11 @@ aside {
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
     text-align: center;
+    image-resolution: initial;
   }
 
 aside img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -86,6 +94,7 @@ aside img {
 /* Footer styling */
 footer {
     margin-top: 40px;
+    border-top: #333;
     text-align: center;
     padding: 15px 0;
     background-color: #222;
