@@ -24,19 +24,26 @@ body {
     color: #fff;
   }
 
+  /* center the nav and keep links on the same line */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
   nav a {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0;
     font-weight: bold;
     padding: 0.25rem 0.5rem;
-    display: block;
+    display: inline-block;
   }
 
   nav a:hover {
     text-decoration: underline;
     background-color: #333;
-    padding: auto;
   }
 
   /* === Main Layout === */
