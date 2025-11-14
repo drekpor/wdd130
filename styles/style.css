@@ -61,7 +61,6 @@ body {
   main img {
     width:auto; 
     height:auto; 
-    border:fit-content; 
     padding:0;  
     box-shadow:0;
 
@@ -121,7 +120,7 @@ aside img {
     background-color: #222;
     color: white;
     font-size: 0.9rem;
-    border-top: #333;
+    border-top: 1px solid #333;
   }
   @media (max-width: 768px) {
     main {
