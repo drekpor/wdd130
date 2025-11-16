@@ -1,8 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
+    background-color: #1e5a96;
     color: #333;
   }
 
@@ -10,6 +16,14 @@ body {
     padding: 0;
     line-height: 1.6;
     margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   /* === Header (scoped to this page) === */
@@ -44,42 +58,37 @@ body {
   }
 
   nav a:hover {
-    text-decoration: underline;
     background-color: #333;
   }
 
   /* === Main Layout === */
   main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1100px;
+    display: block;
+    max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
   }
   main img {
-    width:auto; 
+    width:150px; 
     height:auto; 
-    padding:0;  
-    box-shadow: none;
+    padding:2px;  
+    box-shadow: 0 0 30px gray;
     border: 1px solid #222;
-
+    float:right;
   }
 
   /* === Intro Section === */
   .intro {
-    flex: 2;
-    max-width: 600px;
-    background-color: white;
+    background-color: #d3d3d3;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
   }
 
   .intro h1 {
     text-align: center;
-    color: #333;
+    color: black;
   }
 
   .intro img {
@@ -90,19 +99,22 @@ body {
     border-radius: 50%;
   }
 
+  .intro p {
+    color: black;
+  }
+
 
 /* Aside styling */
 aside {
-    flex: 1;
-    max-width: 350px;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #d3d3d3;
     padding: 1.5rem;
     border-radius: 12px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    text-align: center;
-    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  aside h2 {
+    color: #333;
+    margin-bottom: 1rem;
   }
 
 aside img {
@@ -110,6 +122,34 @@ aside img {
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;
+    float: right;
+  }
+
+aside p {
+    color: #333;
+    text-align: left;
+  }
+
+  .box {
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    list-style: none;
+  }
+
+  .box li {
+    margin: 0.5rem 0;
+  }
+
+  .box a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .box a:hover {
+    text-decoration: underline;
   }
 
 /* Footer styling */
