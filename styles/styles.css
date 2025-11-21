@@ -100,7 +100,17 @@ body {
   }
 
   .intro p {
-    color: black;
+    color: black !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .intro p a {
+    text-decoration: none !important;
+  }
+
+  .intro p a:hover {
+    text-decoration: none !important;
   }
 
 

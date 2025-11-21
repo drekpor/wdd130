@@ -1,0 +1,442 @@
+/* ============================
+   CSS VARIABLES
+=============================== */
+:root {
+  --primary-color: #005f73;
+  --secondary-color: #0a9396;
+  --accent1-color: #94d2bd;
+  --accent2-color: #ee9b00;
+
+  /* Overlay customization variables */
+  --overlay-bg: #4a4a4a; /* default overlay background color */
+  --overlay-text: #ffffff; /* overlay text color */
+  --overlay-accent: #ffd166; /* optional accent (unused by default) */
+  --overlay-height: 120px; /* desired visual height of overlay */
+
+  /* Section background colors */
+  --history-bg: #d7eefc; /* light blue */
+  --adventure-bg: #e6f7e6; /* light green */
+
+  --heading-font: Arial, Helvetica, sans-serif;
+  --body-font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ============================
+   RESET
+=============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================
+   GLOBAL BODY STYLE
+=============================== */
+body {
+  font-family: var(--body-font);
+  color: #222;
+  background-color: #ffffff;
+}
+
+/* ============================
+   PAGE WIDTH
+=============================== */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* ============================
+   HEADINGS
+=============================== */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* ============================
+   BASIC SPACING
+=============================== */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* ============================
+   REMOVE UNDERLINE IN FOOTER IMAGES
+=============================== */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* ============================
+   HEADER STYLING
+=============================== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+}
+
+header nav a {
+  margin-right: 16px;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: var(--accent2-color);
+}
+
+/* ============================
+   HERO SECTION
+=============================== */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* HERO TITLE */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(0, 95, 115, 0.7);
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* HERO ARTICLE */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(148, 210, 189, 0.9);
+  padding: 16px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+/* ============================
+   HAPPY CLIENT SECTION
+=============================== */
+.happy-client {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #f7f7f7;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.happy-client img {
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.client-text h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.client-text p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Make it responsive */
+@media (max-width: 700px) {
+  .happy-client {
+    flex-direction: column;
+    text-align: center;
+  }
+  .happy-client img {
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+/* ============================
+   FOOTER
+=============================== */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.socialmedia img {
+  width: 40px;
+  margin: 0 10px;
+}
+
+/* Lay out social icons in one horizontal line */
+.socialmedia {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the hero section contain the full-width image */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+/* Replace background-image with actual full-width image */
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Mission section overlay — now placed BELOW the image */
+.overlay.rapids {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding: 2rem;
+    margin-top: -6px; /* removes small gap under image */
+}
+
+/* Mission text formatting */
+.overlay.rapids h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.overlay.rapids p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+/* Full-width hero image */
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Mission text overlay — bottom right corner */
+.mission-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    background: rgba(0, 0, 0, 0.45); /* slight transparency, can remove */
+    color: white;
+
+    padding: 1.5rem;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+/* Adjust text inside the overlay */
+.mission-overlay h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.mission-overlay p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.rafter-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 30%;
+  height: auto;
+  z-index: 2;
+
+  /* Add subtle drop shadow */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px; /* optional, soft corners */
+}
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* LEFT LOWER SIDE: Mission */
+.mission-box {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  width: 45%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* RIGHT LOWER CORNER: Single Rafter Overlay */
+.single-rafter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 230px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Fixed bottom overlay removed — related CSS deleted per user request */
+
+/* Additional hero/title and intro-article styles per assignment */
+.hero .hero-title {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  padding: 12px 8px;
+  text-align: center;
+  background-color: rgba(0, 95, 115, 0.75);
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hero .hero-cta {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.intro-article {
+  margin: 16px;
+  padding: 8px;
+  overflow: auto;
+}
+.intro-article .client-small {
+  float: right;
+  width: 125px;
+  height: auto;
+  margin-left: 12px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.intro-article p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 700px) {
+  .intro-article .client-small {
+    float: none;
+    display: block;
+    width: 80%;
+    margin: 0 auto 12px auto;
+  }
+}
+
+/* Hero-local overlay (inside the hero) */
+.hero-overlay {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px; /* sit inside lower part of hero */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: transparent; /* keep container transparent so rafters remain fully visible */
+  color: var(--overlay-text);
+  padding: 0 0.25rem; /* small horizontal padding; mission box has its own padding */
+  border-radius: 8px;
+  max-width: calc(840px - 40px);
+  margin: 0 auto;
+}
+
+/* mission box on the left — small solid block so it doesn't cover the rafters image */
+.hero-overlay .overlay-mission {
+  background: var(--overlay-bg);
+  color: var(--overlay-text);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  max-width: 60%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.overlay-rafters .rafters-small {
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center bottom; /* favor rafters area */
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  flex: 0 0 auto; /* prevent shrinking */
+}
+
+@media (max-width: 700px) {
+  .hero-overlay {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    padding: .75rem;
+    gap: .5rem;
+  }
+  .overlay-rafters .rafters-small {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+  }
+}
+
+/* History and Adventure section boxes */
+.history {
+  background: var(--history-bg);
+  color: #033047; /* dark text for contrast */
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.adventure {
+  background: var(--adventure-bg);
+  color: #0b4f2b; /* darker green text for contrast */
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+@media (max-width: 700px) {
+  .history, .adventure {
+    padding: 14px;
+  }
+}
