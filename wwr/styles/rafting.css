@@ -132,6 +132,11 @@ header nav a:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
 }
 
+.hero article img {
+  float: right;
+  margin-left: 10px;
+}
+
 /* ============================
    HAPPY CLIENT SECTION
 =============================== */
